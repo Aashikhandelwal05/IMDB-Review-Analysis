@@ -63,6 +63,15 @@ def predict_sentiment(text):
     print(f"Text-Based Sentiment: {'Positive' if text_prediction == 1 else 'Negative'}")
     print(f"Emoji Emotion : {'Positive' if emoji_score > 0 else 'Negative' if emoji_score < 0 else 'Neutral'}")
     print(f"Final Sentiment: {'Positive' if final_prediction == 1 else 'Negative'}")
+def predict_sentiment(text, return_label=False):
+    cleaned = clean_text(text)
+    vectorized = vectorizer.transform([cleaned])
+    prediction = model.predict(vectorized)[0]
+    label = "Positive" if prediction == 1 else "Negative"
+    if return_label:
+        return label
+    print(f"\nInput: {text}")
+    print(f"Predicted Sentiment: {label}")
 
 # Run with user input
 if __name__ == "__main__":

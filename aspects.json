@@ -1,0 +1,7 @@
+{
+    "acting": ["acting", "performance", "actor", "actress"],
+    "story": ["story", "plot", "narrative", "script"],
+    "visuals": ["cinematography", "visuals", "effects", "CGI"],
+    "music": ["soundtrack", "music", "score", "audio"]
+  }
+  
