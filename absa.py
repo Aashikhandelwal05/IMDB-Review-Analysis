@@ -49,6 +49,7 @@ def analyze_aspects_vader(text):
     return aspect_sentiments
 
 
+
 # Combined report
 if __name__ == "__main__":
     review = input("Enter a review:\n> ")
