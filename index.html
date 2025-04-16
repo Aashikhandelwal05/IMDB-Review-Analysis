@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IMDB Review Analyzer 🎬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 IMDB Review Analyzer</h1>
+    <p>Analyze overall sentiment and aspects like Acting, Story, Visuals.</p>
+    
+    <textarea id="review" placeholder="Enter your movie review..."></textarea>
+    <button onclick="analyzeReview()">Analyze</button>
+
+    <div id="result">
+      <h2>🧠 Overall Sentiment:</h2>
+      <p id="overall"></p>
+
+      <h2>🔍 Aspect-Based Sentiment:</h2>
+      <ul id="aspects"></ul>
+
+      <h2>🎭 Emoji-Based Emotions:</h2>
+      <ul id="emotions"></ul>
+
+      <h2>📝 Summary:</h2>
+      <p id="summary"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
