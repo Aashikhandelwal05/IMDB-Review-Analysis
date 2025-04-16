@@ -51,15 +51,18 @@ An intelligent sentiment analysis web app that analyzes movie reviews using a mu
 ```bash
 git clone https://github.com/yourusername/imdb-review-analyzer.git
 cd imdb-review-analyzer
+```
 
 ### 2. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
+```
 
 ### 3. Run the Flask Server
 ```bash
 python app.py
+```
 
 ### 4. Open the Frontend
 Open index.html in your browser (/frontend/index.html or just double-click it).
